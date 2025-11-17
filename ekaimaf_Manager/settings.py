@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-k-h0=jik&5_9iz2-13p$$=qy%dox##pdj(pq5psi!7&3w^5%m7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', "ekaimaf.onrender.com", "ekaimaf.org"]
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000", "http://localhost:8000", "https://ekaimaf.onrender.com", "https://ekaimaf.org"]
 
 # Application definition
 
