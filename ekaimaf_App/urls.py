@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.urls import path
 from . import views
+from ekaimaf_App.views import healthz
 
 urlpatterns = [
     path('', views.coming_soon, name='coming_soon'),
+    path("healthz/", healthz, name="healthz"),
 ]
